@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+
+  font-family: 'Poppins', sans-serif;
+  
+  background-color: #22254b;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 15px 20px;
+
+  background-color: #373b69;
+}
+
+.header__input {
+  padding: 10px 20px;
+  
+  font-size: 17px;
+
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+}
+
+input::-webkit-input-placeholder {
+  color: #767dce;
+}
+
+.header__input:focus-visible {
+  outline: none;
+  background-color: #22254b;
+  color: #fff;
+}
+
+.movie {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: grid;
+  gap: 40px;
+  row-gap: 40px;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 3fr);
+
+}
+
+.movie__card {
+  background-color:#373b69;
+  box-shadow: 0 4px 5px #1d1e34;
+  border-radius: 5px;
+}
+
+.movie__img {
+  max-width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.movie__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+
+  background-color: #373b69;
+  border-radius: 4px;
+}
+
+.movie__title {
+  color: #fff;
+  font-size: 20px;
+}
+
+.movie__rating {
+  padding: 5px 8px;
+
+  color: orange;
+  background-color: #22254b;
+  
+  font-size: 20px;
+  font-weight: bold;
+}

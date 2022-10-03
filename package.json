@@ -1,0 +1,29 @@
+{
+  "name": "movie_app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html --dist-dir dev",
+    "build": "parcel build src/index.html --dist-dir build --public-url .",
+    "deploy": "npm run build && gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xellamay/movie_app.git"
+  },
+  "author": "Alena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xellamay/movie_app/issues"
+  },
+  "homepage": "https://github.com/xellamay/movie_app#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.1"
+  }
+}
