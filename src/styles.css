@@ -43,7 +43,7 @@ input::-webkit-input-placeholder {
   color: #fff;
 }
 
-.movie {
+.movies {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
@@ -63,6 +63,10 @@ input::-webkit-input-placeholder {
   background-color:#373b69;
   box-shadow: 0 4px 5px #1d1e34;
   border-radius: 5px;
+}
+
+.movie__card:hover .movie__overview{
+  transform: translateY(0);
 }
 
 .movie__img {
@@ -106,8 +110,4 @@ input::-webkit-input-placeholder {
 
   transform: translateY(100%);
   transition: all 1.5s;
-}
-
-.movie__overview_show {
-  transform: translateY(0);
 }
